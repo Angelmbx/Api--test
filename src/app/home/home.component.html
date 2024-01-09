@@ -9,7 +9,8 @@
     <img class="banner" src="/assets/banner.png" alt="Rick & Morty banner" aria-hidden="true" />
     <h1>Rick & Morty characters!</h1>
     <ol>
-        <li *ngFor="let characer of characters"> {{ characer.name }} </li>
+        <li *ngFor="let character of characters"> 
+            <a [routerLink]="['/detalle', character.id]">{{ character.name }}</a> </li>
     </ol>
 </body>
 </html>
