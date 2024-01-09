@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { CharactersDetailComponent } from './characters-detail/characters-detail.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
-    HomeComponent
-  ],
+    HomeComponent,
+      CharactersDetailComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
